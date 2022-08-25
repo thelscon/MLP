@@ -1,0 +1,9 @@
+<h1 class="mlp-logo"></h1>
+<button class="mlp-style"></button>
+
+<ng-template [ngIf]="windowInnerWidth >= 768" [ngIfElse]="els">
+  <nav class="mlp-menu"></nav>
+</ng-template>
+<ng-template #els>
+  <button class="mlp-button-menu"></button>
+</ng-template>

@@ -1,0 +1,45 @@
+.mlp-logo {
+  grid-area: logo;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-content: center;
+  justify-self: start;
+}
+
+.mlp-menu {
+  grid-area: menu;
+  display: grid;
+  align-content: center;
+  justify-self: center;
+}
+
+.mlp-button-menu {
+  width: 24px;
+  height: 24px;
+
+  justify-self: end;
+
+  border: 0;
+  background: transparent url(../../assets/menu_button.svg) no-repeat center;
+}
+
+.mlp-style {
+  grid-area: style;
+  justify-self: center;
+  width: 24px;
+  height: 24px;
+
+  border: 0;
+  background: transparent url(../../assets/style_button.svg) no-repeat center;
+
+  cursor: pointer;
+}
+
+@media(min-width: 768px) {
+  .mlp-menu {
+    grid-template-columns: repeat(6, max-content);
+  }
+  .mlp-style {
+    justify-self: end;
+  }
+}

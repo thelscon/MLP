@@ -1,0 +1,14 @@
+.mlp-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'logo style menu';
+  align-content: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .mlp-header {
+    grid-template-columns: max-content 1fr max-content;
+    grid-template-areas: 'logo menu style';
+  }
+}
