@@ -9,14 +9,14 @@
   font-weight: 500;
   font-size: 25px;
   transition: 0.1s;
-}
 
-.mlp-logo-day {
-  color: black;
-}
-
-.mlp-logo-night {
-  color: white;
+  &-day {
+    color: black;
+  }
+  &-night {
+    color: white;
+  }
+  
 }
 
 .mlp-menu {
@@ -37,7 +37,7 @@
 
   border: 0;
   background-color: transparent;
-  
+
   cursor: pointer;
 }
 

@@ -1,11 +1,10 @@
 .style-change {
   transition : 0.1s ;
-}
 
-.style-change-day {
-  fill: #231F20;
-}
-
-.style-change-night {
-  fill: white;
+  &-day {
+    fill: #231F20;
+  }
+  &-night {
+    fill: white;
+  }
 }
