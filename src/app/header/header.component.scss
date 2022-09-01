@@ -4,6 +4,19 @@
   grid-template-columns: repeat(2, max-content);
   align-content: center;
   justify-self: start;
+
+  font-family: 'Work Sans';
+  font-weight: 500;
+  font-size: 25px;
+  transition: 0.1s;
+}
+
+.mlp-logo-day {
+  color: black;
+}
+
+.mlp-logo-night {
+  color: white;
 }
 
 .mlp-menu {
@@ -18,19 +31,27 @@
   height: 24px;
 
   justify-self: end;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 
   border: 0;
-  background: transparent url(../../assets/menu_button.svg) no-repeat center;
+  background-color: transparent;
+  
+  cursor: pointer;
 }
 
-.mlp-style {
+.mlp-style-change {
   grid-area: style;
   justify-self: center;
+  display: grid;
+  justify-content: center;
+  align-content: center;
   width: 24px;
   height: 24px;
 
   border: 0;
-  background: transparent url(../../assets/style_button.svg) no-repeat center;
+  background-color: transparent;
 
   cursor: pointer;
 }
@@ -39,7 +60,7 @@
   .mlp-menu {
     grid-template-columns: repeat(6, max-content);
   }
-  .mlp-style {
+  .mlp-style-change {
     justify-self: end;
   }
 }

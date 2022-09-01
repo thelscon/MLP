@@ -1,3 +1,47 @@
+@font-face {
+	font-family: 'Work Sans';
+	src: url('../src/assets/fonts/Work-Sans/400/WorkSans-Regular.eot') format('embedded-opentype'),
+			url('../src/assets/fonts/Work-Sans/400/WorkSans-Regular.woff2') format('woff2'),
+			url('../src/assets/fonts/Work-Sans/400/WorkSans-Regular.woff') format('woff'),
+			url('../src/assets/fonts/Work-Sans/400/WorkSans-Regular.ttf') format('truetype'),
+			url('../src/assets/fonts/Work-Sans/400/WorkSans-Regular.svg#WorkSans-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	src: url('../src/assets/fonts/Work-Sans/500/WorkSans-Medium.eot') format('embedded-opentype'),
+			url('../src/assets/fonts/Work-Sans/500/WorkSans-Medium.woff2') format('woff2'),
+			url('../src/assets/fonts/Work-Sans/500/WorkSans-Medium.woff') format('woff'),
+			url('../src/assets/fonts/Work-Sans/500/WorkSans-Medium.ttf') format('truetype'),
+			url('../src/assets/fonts/Work-Sans/500/WorkSans-Medium.svg#WorkSans-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	src: url('../src/assets/fonts/Work-Sans/600/WorkSans-SemiBold.eot') format('embedded-opentype'),
+			url('../src/assets/fonts/Work-Sans/600/WorkSans-SemiBold.woff2') format('woff2'),
+			url('../src/assets/fonts/Work-Sans/600/WorkSans-SemiBold.woff') format('woff'),
+			url('../src/assets/fonts/Work-Sans/600/WorkSans-SemiBold.ttf') format('truetype'),
+			url('../src/assets/fonts/Work-Sans/600/WorkSans-SemiBold.svg#WorkSans-SemiBold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	src: url('../src/assets/fonts/Work-Sans/700/WorkSans-Bold.eot') format('embedded-opentype'),
+			url('../src/assets/fonts/Work-Sans/700/WorkSans-Bold.woff2') format('woff2'),
+			url('../src/assets/fonts/Work-Sans/700/WorkSans-Bold.woff') format('woff'),
+			url('../src/assets/fonts/Work-Sans/700/WorkSans-Bold.ttf') format('truetype'),
+			url('../src/assets/fonts/Work-Sans/700/WorkSans-Bold.svg#WorkSans-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,4 +88,8 @@ table {
 
 body {
 	min-width: 376px;
+}
+
+* {
+	box-sizing: border-box;
 }

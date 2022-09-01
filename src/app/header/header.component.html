@@ -1,9 +1,12 @@
-<h1 class="mlp-logo"></h1>
-<button class="mlp-style"></button>
+<h1     id="mlp-logo" 
+        [ngClass]="[ 'mlp-logo' , 'mlp-logo-' + theme.themeName ]"></h1>
+<button id="mlp-style-change" 
+        [ngClass]="'mlp-style-change'"
+        (click)="changingTheme()"></button>
 
 <ng-template [ngIf]="windowInnerWidth >= 768" [ngIfElse]="els">
   <nav class="mlp-menu"></nav>
 </ng-template>
 <ng-template #els>
-  <button class="mlp-button-menu"></button>
+  <button id="mlp-button-menu" class="mlp-button-menu"></button>
 </ng-template>
