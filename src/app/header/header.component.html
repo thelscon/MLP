@@ -1,12 +1,13 @@
+<div [ngClass]="[ 'mlp-header-after' , 'mlp-header-after-' + theme.themeName ]"></div>
 <h1     id="mlp-logo" 
         [ngClass]="[ 'mlp-logo' , 'mlp-logo-' + theme.themeName ]"></h1>
 <button id="mlp-style-change" 
         [ngClass]="'mlp-style-change'"
         (click)="changingTheme()"></button>
 
-<ng-template [ngIf]="windowInnerWidth >= 768" [ngIfElse]="els">
-  <nav class="mlp-menu"></nav>
+<ng-template [ngIf]="stateMenu" #mlpMenu>
+  <nav id="mlp-menu" [ngClass]="[ 'mlp-menu' , 'mlp-menu-' + theme.themeName , setOpacity () ]"></nav>
 </ng-template>
-<ng-template #els>
+<ng-template [ngIf]="windowInnerWidth < 768" [ngIfElse]="mlpMenu">
   <button id="mlp-button-menu" class="mlp-button-menu"></button>
 </ng-template>

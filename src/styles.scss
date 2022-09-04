@@ -86,10 +86,14 @@ table {
 	border-spacing: 0;
 }
 
-body {
-	min-width: 376px;
-}
-
 * {
 	box-sizing: border-box;
 }
+
+mlp-root {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	position: relative;
+}
+

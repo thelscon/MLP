@@ -1,3 +1,44 @@
 .mlp-menu-item {
   text-decoration: none;
+
+  transition: 0.1s;
+
+  &-day {
+    color : white ;
+  }
+  &-night {
+    color: #373737;
+  }
 }
+
+@media(max-width: 767px) {
+  .mlp-menu-item {
+    &:hover {
+      background-color: #FF5300;
+    }
+  }
+}
+
+@media(min-width: 50px) {
+  .mlp-menu-item {
+    &-day {
+      color : white ;
+    }
+    &-night {
+      color: #373737;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  .mlp-menu-item {
+    &-day {
+      color : #373737 ;
+    }
+    &-night {
+      color: white;
+    }
+  }
+}
+
+@media(min-width: 1440px) {}

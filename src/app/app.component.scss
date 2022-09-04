@@ -1,23 +1,31 @@
 .mlp-header {
+  min-width: 376px;
+  max-width: 1440px;
+
+  width: 100%;
+
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 'logo style menu';
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
   transition: 0.1s;
 }
 
-.mlp-header-day {
-  background-color: white;
-}
-
-.mlp-header-night {
-  background-color: #3A3B3C;
+@media(min-width: 50px) {
+  .mlp-header {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'logo style menu';
+  }
 }
 
 @media (min-width: 768px) {
   .mlp-header {
     grid-template-columns: max-content 1fr max-content;
     grid-template-areas: 'logo menu style';
+  }
+}
+
+@media(min-width: 1440px) {
+  .mlp-header {
+    grid-template-columns: minmax(max-content, 1fr) max-content minmax(max-content, 1fr);
   }
 }

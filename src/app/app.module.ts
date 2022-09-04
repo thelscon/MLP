@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { LogoComponent } from './logo/logo.component';
 import { MenuComponent } from './menu/menu.component';
 import { HeaderComponent } from './header/header.component';
-import { MenuItemComponent } from './menu-item/menu-item.component';
 import { StyleChangeComponent } from './style-change/style-change.component';
 import { ButtonMenuComponent } from './button-menu/button-menu.component';
 
@@ -16,7 +15,6 @@ import { ButtonMenuComponent } from './button-menu/button-menu.component';
     LogoComponent,
     MenuComponent,
     HeaderComponent,
-    MenuItemComponent,
     StyleChangeComponent,
     ButtonMenuComponent
   ],

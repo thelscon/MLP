@@ -1,4 +1,3 @@
 <a  href=""
-    class="mlp-menu-item"
-    *ngFor="let key of menuItem"
-    [item]="key"></a>
+    [ngClass]="[ 'mlp-menu-item' , 'mlp-menu-item-' + theme.themeName]"
+    *ngFor="let key of menuItem">{{key}}</a>

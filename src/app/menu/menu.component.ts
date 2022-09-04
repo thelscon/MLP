@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { fromEvent } from 'rxjs';
+
+import { ThemeService } from '../theme.service';
 
 @Component({
-  selector: '.mlp-menu',
+  selector: '#mlp-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
@@ -14,10 +15,16 @@ export class MenuComponent implements OnInit {
     'Our Work' ,
     'Clients' ,
     'Our Blog' ,
-    'Contact Us'
+    'Contact Us' ,
+    // 'Lorem One' ,
+    // 'Lorem Two' ,
+    // 'Lorem' ,
+    // 'Lorem Two' ,
+    // 'Lorem One' ,
+    // 'Lorem Two'
   ] ;
 
-  constructor() {}
+  constructor( public theme : ThemeService ) {}
 
   ngOnInit(): void {
   }

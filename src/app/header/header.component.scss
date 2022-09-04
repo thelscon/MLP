@@ -6,8 +6,7 @@
   justify-self: start;
 
   font-family: 'Work Sans';
-  font-weight: 500;
-  font-size: 25px;
+  
   transition: 0.1s;
 
   &-day {
@@ -22,13 +21,21 @@
 .mlp-menu {
   grid-area: menu;
   display: grid;
-  align-content: center;
-  justify-self: center;
+  align-items: center;
+
+  position: absolute;
+  right: 0px;
+  top: -25px;
+
+  font-family: 'Work Sans';
+
+  transition: 0.1s;
 }
 
 .mlp-button-menu {
   width: 24px;
   height: 24px;
+  margin: 13px;
 
   justify-self: end;
   display: grid;
@@ -51,16 +58,141 @@
   height: 24px;
 
   border: 0;
+  padding: 0;
   background-color: transparent;
 
   cursor: pointer;
 }
 
-@media(min-width: 768px) {
+.startOpacity {
+  opacity: 0;
+}
+.middleOpacity {
+  opacity: 1;
+  top: 0px;
+}
+.endOpacity {
+  opacity: 0;
+  top: 25px;
+}
+
+.mlp-header-after {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+
+  &-day {
+    background-color: white;
+  }
+  &-night {
+    background-color: #3A3B3C;
+  }
+
+  transition: 0.1s;
+}
+
+@media(max-width: 767px) {
   .mlp-menu {
+    width: 100%;
+  }
+}
+
+@media(min-width: 50px) {
+  .mlp-logo {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 31px;
+
+    margin: 9px 14px 10px 14px;
+  }
+
+  .mlp-menu {
+    justify-self: center;
+
+    text-align: center;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 32px;
+
+    &-day {
+      background-color: #3A3B3C;
+    }
+    &-night {
+      background-color: white;
+    }
+  }
+
+  .mlp-style-change {
+    margin: 13px;
+  }
+
+  .mlp-header-after {
+    width: 100%;
+  }
+}
+
+@media(min-width: 768px) {
+  .mlp-logo {
+    margin: 27px 14px 28px 40px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .mlp-menu {
+    margin: 28px 15px 28px 14px;
+
+    position: static;
     grid-template-columns: repeat(6, max-content);
+    grid-auto-flow: column;
+    justify-content: center;
+    column-gap: 25px;
+
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+
+    &-day {
+      background-color: transparent;
+    }
+    &-night {
+      background-color: transparent;
+    }
   }
   .mlp-style-change {
+    margin: 28px 38px 28px 14px;
     justify-self: end;
+  }
+}
+
+@media(min-width: 1440px) {
+  .mlp-logo {
+    margin: 26px 39px 26px 39px;
+    justify-self: end;
+
+    font-size: 39px;
+    line-height: 48px;
+  }
+
+  .mlp-menu {
+    margin: 37px 39px 38px 38px;
+    position: static;
+    grid-template-columns: repeat(6, max-content);
+    column-gap: 38px;
+
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 20px;
+  }
+  
+  .mlp-style-change {
+    margin: 38px 135px 38px 0px;
+  }
+
+  .mlp-header-after {
+    width: 100vw;
   }
 }
