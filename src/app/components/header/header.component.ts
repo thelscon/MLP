@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { fromEvent , map } from 'rxjs';
 
-import { ThemeService } from '../theme.service';
+import { ThemeService } from '../../services/theme.service';
 
 type opacityType = 'start' | 'middle' | 'end' ;
 
 @Component({
-  selector: '.mlp-header',
+  selector: '#mlp-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
