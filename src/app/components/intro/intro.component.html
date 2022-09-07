@@ -1,6 +1,16 @@
-<img id="mlp-intro-image" src="../../../assets/images/Intro.svg" alt="" [ngClass]="'intro-image'">
-<header id="mlp-intro-header">We Are The Best Digital Agency for business</header>
-<p id="mlp-intro-text">
-  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. .
-</p>
-<button id="contact-us">Contact Us</button>
+<div 
+  [ngClass]="[ 'mlp-intro-after' , 'mlp-intro-after-' + theme.themeName ]"></div>
+<img 
+  id="mlp-intro-image" 
+  src="../../../assets/images/Intro.svg" 
+  alt="Image" 
+  [ngClass]="'mlp-intro-image'">
+<header 
+  id="mlp-intro-header" 
+  [ngClass]="[ 'mlp-intro-header' , 'mlp-intro-header-' + theme.themeName]">We Are The Best <span>Digital Agency</span> for business</header>
+<p 
+  id="mlp-intro-text" 
+  [ngClass]="[ 'mlp-intro-text' , 'mlp-intro-text-' + theme.themeName]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. .</p>
+<button 
+  id="contact-us" 
+  [ngClass]="'contact-us'">Contact Us</button>

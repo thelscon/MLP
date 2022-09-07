@@ -16,10 +16,10 @@ export class MenuComponent implements OnInit {
     'Clients' ,
     'Our Blog' ,
     'Contact Us' ,
-    // 'Lorem One' ,
+    // 'L' ,
     // 'Lorem Two' ,
     // 'Lorem' ,
-    // 'Lorem Two' ,
+    // 'Lorem' ,
     // 'Lorem One' ,
     // 'Lorem Two'
   ] ;

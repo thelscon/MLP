@@ -1,6 +1,5 @@
 .mlp-header {
-  min-width: 376px;
-  max-width: 1440px;
+  position: relative;
 
   width: 100%;
 
@@ -10,10 +9,25 @@
   transition: 0.1s;
 }
 
+.mlp-intro {
+  position: relative;
+
+  width: 100%;
+  
+  display: grid;
+  justify-items: center;
+}
+
 @media(min-width: 50px) {
   .mlp-header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 'logo style menu';
+  }
+  .mlp-intro {
+    grid-template-areas:  'image'
+                          'header'
+                          'text'
+                          'contact-us';
   }
 }
 
@@ -21,6 +35,11 @@
   .mlp-header {
     grid-template-columns: max-content 1fr max-content;
     grid-template-areas: 'logo menu style';
+  }
+  .mlp-intro {
+    grid-template-areas:  'header image'
+                          'text image'
+                          'contact-us image';
   }
 }
 

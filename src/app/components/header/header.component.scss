@@ -80,8 +80,6 @@
   position: absolute;
   z-index: -1;
   height: 100%;
-  top: 0px;
-  left: 0px;
 
   &-day {
     background-color: white;
@@ -194,5 +192,6 @@
 
   .mlp-header-after {
     width: 100vw;
+    left: calc((100vw - 1440px) / -2);
   }
 }
