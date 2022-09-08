@@ -15,7 +15,6 @@
   width: 100%;
   
   display: grid;
-  justify-items: center;
 }
 
 @media(min-width: 50px) {
@@ -28,6 +27,7 @@
                           'header'
                           'text'
                           'contact-us';
+    justify-items: center;
   }
 }
 
@@ -40,11 +40,20 @@
     grid-template-areas:  'header image'
                           'text image'
                           'contact-us image';
+    grid-template-columns: minmax(min-content, max-content) max-content;
+    grid-template-rows: max-content max-content 1fr;
+    justify-content: center;
+    justify-items: start;
+    align-items: start;
+    column-gap: 19px;
   }
 }
 
 @media(min-width: 1440px) {
   .mlp-header {
     grid-template-columns: minmax(max-content, 1fr) max-content minmax(max-content, 1fr);
+  }
+  .mlp-intro {
+    column-gap: 36px;
   }
 }
