@@ -20,9 +20,10 @@
 @media(min-width: 50px) {
   .mlp-header {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 'logo style menu';
+    grid-template-areas: 'logo style button-menu';
   }
   .mlp-intro {
+    padding: 50px 0px;
     grid-template-areas:  'image'
                           'header'
                           'text'
@@ -37,6 +38,7 @@
     grid-template-areas: 'logo menu style';
   }
   .mlp-intro {
+    padding: 73px 53px 73px 40px;
     grid-template-areas:  'header image'
                           'text image'
                           'contact-us image';
@@ -54,6 +56,7 @@
     grid-template-columns: minmax(max-content, 1fr) max-content minmax(max-content, 1fr);
   }
   .mlp-intro {
+    padding: 149px 137px 157px 135px;
     column-gap: 36px;
   }
 }

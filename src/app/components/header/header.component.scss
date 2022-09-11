@@ -21,11 +21,13 @@
 .mlp-menu {
   grid-area: menu;
   display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
 
   position: absolute;
+  z-index: 1;
   right: 0px;
-  top: -25px;
+  top: 25px;
 
   font-family: 'Work Sans';
 
@@ -33,6 +35,7 @@
 }
 
 .mlp-button-menu {
+  grid-area: button-menu;
   width: 24px;
   height: 24px;
   margin: 13px;
@@ -69,11 +72,11 @@
 }
 .middleOpacity {
   opacity: 1;
-  top: 0px;
+  top: 50px;
 }
 .endOpacity {
   opacity: 0;
-  top: 25px;
+  top: 75px;
 }
 
 .mlp-header-after {

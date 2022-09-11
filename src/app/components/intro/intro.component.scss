@@ -40,16 +40,15 @@
 @media(min-width: 50px) {
   .mlp-intro-image {
     width: 335px;
-    margin: 50px 21px 25px 20px;
   }
   .mlp-intro-header {
-    margin: 25px 27px 9px 26px;
+    margin: 50px 27px 0px 26px;
   }
   .mlp-intro-text {
-    margin: 9px 27px 14px 26px;
+    margin: 18px 27px 0px 26px;
   }
   .contact-us {
-    margin: 13px 27px 50px 26px;
+    margin: 27px 27px 0px 26px;
   }
   .mlp-intro-after {
     width: 100%;
@@ -59,32 +58,32 @@
 @media(min-width: 768px) {
   .mlp-intro-image {
     width: 307px;
-    margin: 89px 53px 166px 0;
+    margin: 16px 0px 0px 0px;
   }
   .mlp-intro-header {
-    margin: 73px 0 9px 40px;
+    margin: 0px;
   }
   .mlp-intro-text {
-    margin: 9px 0 16px 40px;
+    margin: 18px 0px 0px 0px;
   }
   .contact-us {
-    margin: 16px 0 73px 40px;
+    margin: 32px 0px 0px 0px;
   }
 }
 
 @media(min-width: 1440px) {
   .mlp-intro-image {
     width: 639px;
-    margin: 149px 137px 157px 0;
+    margin: 0px;
   }
   .mlp-intro-header {
-    margin: 176px 0 6px 135px;
+    margin: 27px 0px 0px 0px;
   }
   .mlp-intro-text {
-    margin: 5px 0 22px 135px;
+    margin: 11px 0px 0px 0px;
   }
   .contact-us {
-    margin: 21px 0 206px 135px;
+    margin: 43px 0px 0px 0px;
   }
   .mlp-intro-after {
     width: 100vw;
