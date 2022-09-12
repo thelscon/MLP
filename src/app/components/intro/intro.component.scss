@@ -3,8 +3,12 @@
   z-index: -1;
   height: 100%;
 
-  &-day {}
-  &-night {}
+  &-day {
+    background-color: #FFF7F4;
+  }
+  &-night {
+    background-color: #242526;
+  }
 
   transition: 0.1s;
 }
@@ -16,24 +20,54 @@
 .mlp-intro-header {
   grid-area: header;
 
-  &-day {}
-  &-night {}
+  font-family: 'Work Sans';
+
+  &-day {
+    color: #373737;
+  }
+  &-night {
+    color: white;
+  }
 
   transition: 0.1s;
+}
+
+.orange-logo {
+  color: #FF5300;
 }
 
 .mlp-intro-text {
   grid-area: text;
 
-  &-day {}
-  &-night {}
+  font-family: 'Work Sans';
+  font-weight: 400;
+
+  &-day {
+    color: #7B7B7B;
+  }
+  &-night {
+    color: white;
+  }
 
   transition: 0.1s;
 }
 
 .contact-us {
+  border: 0;
+  border-radius: 5px;
+  padding: 13px 22px 12px 19px;
   grid-area: contact-us;
 
+  background-color: #FF5300;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1), 4px 5px 15px rgba(255, 83, 0, 0.4);
+  color: white;
+
+  font-family: 'Work Sans';
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 20px;
+
+  cursor: pointer;
   transition: 0.1s;
 }
 
@@ -43,9 +77,18 @@
   }
   .mlp-intro-header {
     margin: 50px 27px 0px 26px;
+
+    font-weight: 600;
+    line-height: 39px;
+    font-size: 31px;
+    text-align: center;
   }
   .mlp-intro-text {
     margin: 18px 27px 0px 26px;
+
+    line-height: 24px;
+    font-size: 16px;
+    text-align: center;
   }
   .contact-us {
     margin: 27px 27px 0px 26px;
@@ -62,9 +105,15 @@
   }
   .mlp-intro-header {
     margin: 0px;
+
+    line-height: 48px;
+    font-size: 39px;
+    text-align: left;
   }
   .mlp-intro-text {
     margin: 18px 0px 0px 0px;
+
+    text-align: left;
   }
   .contact-us {
     margin: 32px 0px 0px 0px;
@@ -78,6 +127,10 @@
   }
   .mlp-intro-header {
     margin: 27px 0px 0px 0px;
+
+    font-weight: 700;
+    line-height: 59px;
+    font-size: 48px;
   }
   .mlp-intro-text {
     margin: 11px 0px 0px 0px;
