@@ -47,7 +47,7 @@ export class HeaderComponent implements OnInit {
           
         }
         else {
-          if ( ( id !== 'mlp-style-change' && id !== 'svg-style-change' && id !== 'path-style-change' ) && this.stateMenu ) {
+          if ( ( id !== 'mlp-header-style' && id !== 'svg-style' && id !== 'svg-path-style' ) && this.stateMenu ) {
             this.opacity = 'end' ;
             setTimeout ( ()=> {
               this.stateMenu = false ;
@@ -80,9 +80,6 @@ export class HeaderComponent implements OnInit {
     else {
       return '' ;
     }
-    // return this.windowInnerWidth < 768 ?
-    //   this.opacity ? 'noOpacity' : 'fullOpacity'
-    //   : '' ;
   }
 
 }

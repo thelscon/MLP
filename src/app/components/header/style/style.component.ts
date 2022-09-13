@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { ThemeService } from '../../../services/theme.service';
 
 @Component({
-  selector: '#mlp-button-menu',
-  templateUrl: './button-menu.component.svg',
-  styleUrls: ['./button-menu.component.scss']
+  selector: '#mlp-header-style',
+  templateUrl: './style.component.svg',
+  styleUrls: ['./style.component.scss']
 })
-export class ButtonMenuComponent implements OnInit {
+export class StyleComponent implements OnInit {
 
   constructor( public theme : ThemeService ) { }
 

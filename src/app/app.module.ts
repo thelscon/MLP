@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 
 import { HeaderComponent } from './components/header/header.component';
 import { LogoComponent } from './components/header/logo/logo.component';
-import { StyleChangeComponent } from './components/header/style-change/style-change.component';
+import { StyleComponent } from './components/header/style/style.component';
 import { MenuComponent } from './components/header/menu/menu.component';
-import { ButtonMenuComponent } from './components/header/button-menu/button-menu.component';
+import { MenuButtonComponent } from './components/header/menuButton/menuButton.component';
 
 import { IntroComponent } from './components/intro/intro.component';
 
@@ -18,8 +18,8 @@ import { IntroComponent } from './components/intro/intro.component';
     LogoComponent,
     MenuComponent,
     HeaderComponent,
-    StyleChangeComponent,
-    ButtonMenuComponent,
+    StyleComponent,
+    MenuButtonComponent,
     IntroComponent
   ],
   imports: [

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StyleChangeComponent } from './style-change.component';
+import { StyleComponent } from './style.component';
 
 describe('StyleChangeComponent', () => {
-  let component: StyleChangeComponent;
-  let fixture: ComponentFixture<StyleChangeComponent>;
+  let component: StyleComponent;
+  let fixture: ComponentFixture<StyleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ StyleChangeComponent ]
+      declarations: [ StyleComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(StyleChangeComponent);
+    fixture = TestBed.createComponent(StyleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
