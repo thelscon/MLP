@@ -11,16 +11,34 @@ import { MenuComponent } from './components/header/menu/menu.component';
 import { MenuButtonComponent } from './components/header/menuButton/menuButton.component';
 
 import { IntroComponent } from './components/intro/intro.component';
+import { IntroHeaderComponent } from './components/intro/header/header.component';
+import { IntroTextComponent } from './components/intro/text/text.component';
+
+import { SocialNetworksComponent } from './components/intro/socialNetworks/socialNetworks.component';
+import { FacebookComponent } from './components/intro/socialNetworks/facebook/facebook.component';
+import { InstagramComponent } from './components/intro/socialNetworks/instagram/instagram.component';
+import { TwitterComponent } from './components/intro/socialNetworks/twitter/twitter.component';
+import { SkypeComponent } from './components/intro/socialNetworks/skype/skype.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+
+    HeaderComponent,
     LogoComponent,
     MenuComponent,
-    HeaderComponent,
     StyleComponent,
     MenuButtonComponent,
-    IntroComponent
+
+    IntroComponent,
+    IntroHeaderComponent,
+    IntroTextComponent,
+
+    SocialNetworksComponent,
+    FacebookComponent,
+    InstagramComponent,
+    TwitterComponent,
+    SkypeComponent
   ],
   imports: [
     BrowserModule,
