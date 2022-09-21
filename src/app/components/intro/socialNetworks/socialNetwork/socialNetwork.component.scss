@@ -1,0 +1,14 @@
+.socialNetwork-item {
+  transition: 0.1s;
+  
+  &-day {
+    fill: #FF5300;
+  }
+  &-night {
+    fill: white;
+  }
+}
+
+.over {
+  fill: white;
+}

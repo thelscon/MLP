@@ -15,6 +15,13 @@
 
 .mlp-social {
   position: absolute;
+  right: 0px;
+
+  display: grid;
+  grid-template-columns: 40px;
+  grid-auto-rows: 40px;
+  grid-auto-flow: row;
+  row-gap: 5px;
 }
 
 .mlp-intro-image {
@@ -118,6 +125,9 @@
   .contact-us {
     margin: 32px 0px 0px 0px;
   }
+  .mlp-social {
+    top: 59px;
+  }
 }
 
 @media(min-width: 1440px) {
@@ -141,5 +151,9 @@
   .mlp-intro-after {
     width: 100vw;
     left: calc((100vw - 1440px) / -2);
+  }
+  .mlp-social {
+    right: calc((100vw - 100%) / -2);
+    top: 217px;
   }
 }

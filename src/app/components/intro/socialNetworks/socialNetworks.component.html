@@ -1,12 +1,9 @@
-<a 
-  href=""
-  id="facebook"></a>
-<a 
-  href=""
-  id="instagram"></a>
-<a 
-  href=""
-  id="twitter"></a>
-<a 
-  href=""
-  id="skype"></a>
+<a
+  href="" 
+  *ngFor="let socialNetwork of socialNetworks" 
+  [socialNetwork]="socialNetwork"
+  [overout]="socialNetwork === 'facebook' ? facebookOver : socialNetwork === 'instagram' ? instagramOver : socialNetwork === 'twitter' ? twitterOver : socialNetwork === 'skype' ? skypeOver : false "
+  [ngClass]="[ 'socialNetwork' , 'socialNetwork-' + theme.themeName]"
+  (mouseover)="over(socialNetwork)"
+  (mouseout)="out(socialNetwork)">
+</a>

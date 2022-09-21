@@ -15,10 +15,7 @@ import { IntroHeaderComponent } from './components/intro/header/header.component
 import { IntroTextComponent } from './components/intro/text/text.component';
 
 import { SocialNetworksComponent } from './components/intro/socialNetworks/socialNetworks.component';
-import { FacebookComponent } from './components/intro/socialNetworks/facebook/facebook.component';
-import { InstagramComponent } from './components/intro/socialNetworks/instagram/instagram.component';
-import { TwitterComponent } from './components/intro/socialNetworks/twitter/twitter.component';
-import { SkypeComponent } from './components/intro/socialNetworks/skype/skype.component';
+import { SocialNetworkComponent } from './components/intro/socialNetworks/socialNetwork/socialNetwork.component';
 
 @NgModule({
   declarations: [
@@ -35,10 +32,7 @@ import { SkypeComponent } from './components/intro/socialNetworks/skype/skype.co
     IntroTextComponent,
 
     SocialNetworksComponent,
-    FacebookComponent,
-    InstagramComponent,
-    TwitterComponent,
-    SkypeComponent
+    SocialNetworkComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+.socialNetwork {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+
+  &-day {
+    background-color: #FFFFFF;
+  }
+  &-night {
+    background-color: #3A3B3C;
+  }
+
+  &:hover {
+    background-color: #FF5300;
+    box-shadow: 4px 5px 15px rgba(255, 83, 0, 0.4);
+  }
+
+  transition: 0.1s;
+}

@@ -1,4 +1,5 @@
 .mlp-logo {
+  z-index: 1;
   grid-area: logo;
   display: grid;
   grid-template-columns: repeat(2, max-content);
@@ -19,6 +20,7 @@
 }
 
 .mlp-menu {
+  z-index: 1;
   grid-area: menu;
   display: grid;
   grid-template-columns: 1fr;
@@ -35,6 +37,7 @@
 }
 
 .mlp-button-menu {
+  z-index: 1;
   grid-area: button-menu;
   width: 24px;
   height: 24px;
@@ -52,6 +55,7 @@
 }
 
 .mlp-style-change {
+  z-index: 1;
   grid-area: style;
   justify-self: center;
   display: grid;
@@ -81,7 +85,7 @@
 
 .mlp-header-after {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   height: 100%;
 
   &-day {
@@ -142,7 +146,6 @@
     font-size: 20px;
     line-height: 25px;
   }
-
   .mlp-menu {
     margin: 28px 15px 28px 14px;
 
@@ -166,6 +169,9 @@
   .mlp-style-change {
     margin: 28px 38px 28px 14px;
     justify-self: end;
+  }
+  .mlp-header-after {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
   }
 }
 
