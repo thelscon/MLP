@@ -1,6 +1,7 @@
 <div 
   [ngClass]="[ 'mlp-intro-after' , 'mlp-intro-after-' + theme.themeName ]"></div>
 <section 
+  *ngIf="windowWidth >= 768"
   id="mlp-intro-social"
   [ngClass]="'mlp-social'">
 </section>

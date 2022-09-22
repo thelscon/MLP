@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
 import { ThemeService } from "src/app/services/theme.service";
+import { WindowService } from "src/app/services/window.service";
 
 @Component ({
   selector : '#mlp-intro' ,
@@ -8,9 +9,19 @@ import { ThemeService } from "src/app/services/theme.service";
   styleUrls : [ './intro.component.scss' ]
 })
 export class IntroComponent implements OnInit {
-  constructor ( public theme : ThemeService ) {}
+  windowWidth = window.innerWidth ;
 
-  ngOnInit(): void {
-    
-  }
+  constructor ( 
+    public theme : ThemeService ,
+    public windowService : WindowService ) {
+
+      this.windowService.resize.subscribe (
+        ( event ) => {
+          this.windowWidth = window.innerWidth ;
+        }
+      )
+
+    }
+
+  ngOnInit(): void {}
 }

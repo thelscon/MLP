@@ -2,8 +2,8 @@
   href="" 
   *ngFor="let socialNetwork of socialNetworks" 
   [socialNetwork]="socialNetwork"
-  [overout]="socialNetwork === 'facebook' ? facebookOver : socialNetwork === 'instagram' ? instagramOver : socialNetwork === 'twitter' ? twitterOver : socialNetwork === 'skype' ? skypeOver : false "
+  [overout]="theme.themeName === 'day' && socialNetwork === 'facebook' ? facebookOver : socialNetwork === 'instagram' ? instagramOver : socialNetwork === 'twitter' ? twitterOver : socialNetwork === 'skype' ? skypeOver : false "
   [ngClass]="[ 'socialNetwork' , 'socialNetwork-' + theme.themeName]"
-  (mouseover)="over(socialNetwork)"
-  (mouseout)="out(socialNetwork)">
+  (mouseover)="overout(socialNetwork)"
+  (mouseout)="overout(socialNetwork)">
 </a>
