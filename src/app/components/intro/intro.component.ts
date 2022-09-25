@@ -9,19 +9,7 @@ import { WindowService } from "src/app/services/window.service";
   styleUrls : [ './intro.component.scss' ]
 })
 export class IntroComponent implements OnInit {
-  windowWidth = window.innerWidth ;
-
-  constructor ( 
-    public theme : ThemeService ,
-    public windowService : WindowService ) {
-
-      this.windowService.resize.subscribe (
-        ( event ) => {
-          this.windowWidth = window.innerWidth ;
-        }
-      )
-
-    }
+  constructor ( public theme : ThemeService ) {}
 
   ngOnInit(): void {}
 }

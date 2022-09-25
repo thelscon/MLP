@@ -14,8 +14,8 @@ import { IntroComponent } from './components/intro/intro.component';
 import { IntroHeaderComponent } from './components/intro/header/header.component';
 import { IntroTextComponent } from './components/intro/text/text.component';
 
-import { SocialNetworksComponent } from './components/intro/socialNetworks/socialNetworks.component';
-import { SocialNetworkComponent } from './components/intro/socialNetworks/socialNetwork/socialNetwork.component';
+import { SocialNetworksComponent } from './components/socialNetworks/socialNetworks.component';
+import { SocialNetworkComponent } from './components/socialNetworks/socialNetwork/socialNetwork.component';
 
 @NgModule({
   declarations: [

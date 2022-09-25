@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { ThemeService } from './services/theme.service';
+import { WindowService } from './services/window.service';
 
 @Component({
   selector: 'mlp-root',
@@ -10,5 +11,15 @@ import { ThemeService } from './services/theme.service';
 export class AppComponent {
   title = 'MLP';
 
-  constructor ( public theme : ThemeService ) {}
+  windowWidth = window.innerWidth ;
+
+  constructor ( 
+    public theme : ThemeService ,
+    public windowService : WindowService ) {
+      this.windowService.resize.subscribe (
+        ( event ) => {
+          this.windowWidth = window.innerWidth ;
+        }
+      )
+    }
 }

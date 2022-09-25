@@ -1,2 +1,7 @@
+<section 
+  *ngIf="windowWidth >= 768"
+  id="mlp-intro-social"
+  [ngClass]="'mlp-social'">
+</section>
 <header id="mlp-header" [ngClass]="'mlp-header'"></header>
-<section id="mlp-intro" [ngClass]="'mlp-intro'"></section>
+<section id="mlp-intro" [ngClass]=" [ 'mlp-intro' , 'mlp-intro-' + theme.themeName ] "></section>
