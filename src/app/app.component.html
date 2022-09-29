@@ -1,7 +1,8 @@
 <section 
-  *ngIf="windowWidth >= 768"
+  *ngIf="visibleComponent"
   id="mlp-intro-social"
-  [ngClass]="'mlp-social'">
+  [ngClass]="[ 'mlp-social' ]"
+  [class.mlp-social-position]="playVisible">
 </section>
 <header id="mlp-header" [ngClass]="'mlp-header'"></header>
 <section id="mlp-intro" [ngClass]=" [ 'mlp-intro' , 'mlp-intro-' + theme.themeName ] "></section>
