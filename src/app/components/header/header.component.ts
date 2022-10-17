@@ -13,6 +13,7 @@ type opacityType = 'start' | 'middle' | 'end' ;
 export class HeaderComponent implements OnInit {
 
   windowInnerWidth = window.innerWidth ;
+  insideStateMenu = false ;
   stateMenu = false ;
   opacity : opacityType = 'start';
 
@@ -22,6 +23,11 @@ export class HeaderComponent implements OnInit {
         this.windowInnerWidth = window.innerWidth ;
         if ( this.windowInnerWidth > 768 && this.stateMenu ) {
           this.stateMenu = false
+        }
+        else {
+          if ( this.insideStateMenu ) {
+            this.stateMenu = true ;
+          }
         }
       } ) ;
 
@@ -33,6 +39,7 @@ export class HeaderComponent implements OnInit {
         if ( id === 'mlp-button-menu' || id === 'button-menu' || id === 'path-button-menu' ) {
           if ( this.stateMenu === false ) {
             this.stateMenu = true ;      
+            this.insideStateMenu = true ;
             setTimeout ( ()=> {
               this.opacity = 'middle' ;
             } ) ;
@@ -41,6 +48,7 @@ export class HeaderComponent implements OnInit {
             this.opacity = 'end' ;
             setTimeout ( ()=> {
               this.stateMenu = false ;
+              this.insideStateMenu = false ;
               this.opacity = 'start' ;
             } , 100 ) ;
           }
@@ -51,6 +59,7 @@ export class HeaderComponent implements OnInit {
             this.opacity = 'end' ;
             setTimeout ( ()=> {
               this.stateMenu = false ;
+              this.insideStateMenu = false ;
               this.opacity = 'start' ;
             } , 100 ) ;
           }
